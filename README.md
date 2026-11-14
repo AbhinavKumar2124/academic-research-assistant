@@ -55,6 +55,6 @@ Tune `CHUNK_SIZE`, `CHUNK_OVERLAP`, and `RETRIEVAL_TOP_K` in `.env`. Every retri
 .\.venv\Scripts\python.exe -m ipykernel install --user --name academic-research-assistant --display-name "Academic Research Assistant (.venv)"
 ```
 
-Choose that kernel in `notebooks/demo.ipynb`. The deterministic tests mock model responses; the integration test needs a responding provider and creates a temporary synthetic PDF. It does not represent a real academic finding.
+Choose that kernel in `notebooks/demo.ipynb` and edit its example question to fit your PDFs. The deterministic tests mock model responses; the integration test needs a responding provider and creates a temporary synthetic PDF. It does not represent a real academic finding.
 
 **Honest failure:** A scanned PDF without extractable text is reported during ingestion and skipped. If retrieval finds no useful passages, the report says evidence is insufficient. Claims without exact supporting passage quotes are removed and listed in **Unsupported Claims Removed**. Quote matching is a conservative check, not proof of scientific truth; a human should review final claims and the original papers.
