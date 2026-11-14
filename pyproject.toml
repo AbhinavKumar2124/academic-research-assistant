@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires Ollama or configured OpenRouter and local embedding model"]
+
+[tool.ruff]
+line-length = 100
