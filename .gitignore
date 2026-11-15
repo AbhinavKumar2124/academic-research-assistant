@@ -11,3 +11,4 @@ data/logs/
 *.tmp
 *.temp
 *.log
+data/papers/*.pdf
